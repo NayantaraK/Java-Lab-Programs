@@ -4,9 +4,9 @@ class newThread implements Runnable {
    String name;
    Thread t;
    int count;
-   newThread(String S, int tim, int n)
+   newThread(String S, long t, int n)
    {
-       time=tim;
+       time=t;
        name=S;
        count=n;
        t= new Thread(this,name);
@@ -19,7 +19,7 @@ class newThread implements Runnable {
            {
            
             System.out.println(name);
- Thread.sleep(time);
+            Thread.sleep(time);
            }
 
        }
